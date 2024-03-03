@@ -10,20 +10,20 @@ namespace Intro.Business;
 public class CourseManager
 {
     //constructor
-    //newi gördüğünde çalışan bir blok var 
-    Course[] courses=new Course[3];
+ 
+    Courses[] courses=new Courses[3];
     public CourseManager()
     {
-        Course course1 = new Course();
+        Courses course1 = new Courses();
         course1.Id = 1;
         course1.Name = "C#";
         course1.Description = ".NET 8 vs.";
         course1.Price = 100;
-        Course course2 = new Course();
+        Courses course2 = new Courses();
         course2.Id = 2;
         course2.Name = "Java";
         course2.Price = 100;
-        Course course3 = new Course();
+        Courses course3 = new Courses();
         course3.Id = 3;
         course3.Name = "Python";
         course3.Description = "Python 3.12";
@@ -34,7 +34,7 @@ public class CourseManager
 
     }
 
-    public Course[] GetAll()
+    public Courses[] GetAll()
     {
 
       return courses;
